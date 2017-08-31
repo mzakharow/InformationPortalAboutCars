@@ -12,11 +12,12 @@ import javax.validation.constraints.Size;
 @Table(name ="\"siteuser\"")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "iduser")
-    private int iduser;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "iduser")
+//    private int iduser;
 
+    @Id
     @NotEmpty
     @Size(min = 5, max = 20)
     @Column(name = "username")
@@ -30,13 +31,13 @@ public class User {
     @Column(name="enabled")
     private boolean enabled;
 
-    public int getIdUser() {
-        return iduser;
-    }
-
-    public void setIdUser(int iduser) {
-        this.iduser = iduser;
-    }
+//    public int getIdUser() {
+//        return iduser;
+//    }
+//
+//    public void setIdUser(int iduser) {
+//        this.iduser = iduser;
+//    }
 
     public String getUsername() {
         return username;
@@ -65,7 +66,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "idUser=" + iduser +
+//                "idUser=" + iduser +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +

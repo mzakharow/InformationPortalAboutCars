@@ -34,12 +34,6 @@
         <property name="password" value="098098789" />
     </bean>
 
-     <!--initialize Embedded DataSource. Встроенная база данных-->
-    <!--<jdbc:initialize-database data-source="dataSource">-->
-        <!--<jdbc:script location="classpath:dbschema.sql"/>-->
-        <!--<jdbc:script location="classpath:test-data.sql"/>-->
-    <!--</jdbc:initialize-database>-->
-
     <!-- REST template configuration -->
     <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
 

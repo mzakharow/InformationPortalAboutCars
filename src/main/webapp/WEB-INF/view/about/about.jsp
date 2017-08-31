@@ -56,14 +56,6 @@
                                 <small>Язык программирования</small>
                             </h3>
                             <p>Высокоуровневый строго типизированный, объектно-ориентированный, платформо-независимый, функциональный (начиная с java 8) язык программирования и среда выполнения. </p>
-                            <%--<ul class="list-inline">--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>--%>
-                                <%--</li>--%>
-                            <%--</ul>--%>
                         </div>
                     </div>
                 </div>
@@ -75,14 +67,6 @@
                                 <small>Spring Framework</small>
                             </h3>
                             <p>Универсальный фреймворк с открытым исходным кодом для Java-платформы. Обеспечивает комплексную модель разработки и конфигурации для современных бизнес-приложений.</p>
-                            <%--<ul class="list-inline">--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>--%>
-                                <%--</li>--%>
-                            <%--</ul>--%>
                         </div>
                     </div>
                 </div>
@@ -94,14 +78,6 @@
                                 <small>Hibernate Framework</small>
                             </h3>
                                 <p>Универсальный фреймворк с открытым исходным кодом для Java-платформы. Обеспечивает комплексную модель разработки и конфигурации для современных бизнес-приложений.</p>
-                                <%--<ul class="list-inline">--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--</ul>--%>
                         </div>
                     </div>
                 </div>
@@ -113,14 +89,6 @@
                                 <small>Maven Framework</small>
                             </h3>
                             <p>Инструмент для сборки Java проекта. Независит от ОС. Управляет зависимостями. Декларативное описание проекта. Имеет возможность сборки из командной строки.</p>
-                            <%--<ul class="list-inline">--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>--%>
-                                <%--</li>--%>
-                                <%--<li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>--%>
-                                <%--</li>--%>
-                            <%--</ul>--%>
                         </div>
                     </div>
                 </div>

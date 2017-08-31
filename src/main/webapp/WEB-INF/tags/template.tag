@@ -35,7 +35,6 @@
 
 <body>
 
-<c:url value="/file.html" var="file"/>
 <c:url value="/orm.html" var="orm" />
 <c:url value="/security.html" var="security" />
 
@@ -86,26 +85,6 @@
                 <c:url value="/orm.html" var="orm"/>
                 <li><a href="${orm}">База данных</a></li>
 
-                <%--<li class="dropdown">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Дополнительно<b class="caret"></b></a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                        <%--<li>--%>
-                            <%--<a href="${file}">Загрузка файла PDF и Excel</a>--%>
-                        <%--</li>--%>
-                        <%--<li>--%>
-                            <%--<a href="${orm}">База данных</a>--%>
-                        <%--</li>--%>
-                        <%--<li>--%>
-                            <%--<c:if test="${not isUSer}">--%>
-                                <%--<a href="/login.html">Войти</a>--%>
-                            <%--</c:if>--%>
-                        <%--<c:if test="${isUSer}">--%>
-                            <%--<a href="/j_spring_security_logout">Выйти</a>--%>
-                        <%--</c:if>--%>
-                            <%--&lt;%&ndash;<a href="${security}">Войти</a>&ndash;%&gt;--%>
-                        <%--</li>--%>
-                    <%--</ul>--%>
-                <%--</li>--%>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -14,6 +14,7 @@
     <spring:url value="/resources/css/signin.css" var="signin" />
     <link href="${bootstrap}" rel="stylesheet" />
     <link href="${signin}" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/resources/images/car.png" />
 </head>
 <body>
 <form name="form" action="j_spring_security_check" method="post" class="form-signin">
@@ -40,10 +41,10 @@
     <h2 class="form-signin-heading">Пожалуйста войдите</h2>
 
     <label for="inputEmail" class="sr-only"><spring:message code="code" text="Email"/></label>
-    <input id="inputEmail" class="form-control" name="j_username" value="admin@gmail.com" required autofocus/>
+    <input id="inputEmail" class="form-control" name="j_username" required autofocus/>
 
     <label for="inputPassword" class="sr-only"><spring:message code="pass" text="Password"/></label>
-    <input type="password" id="inputPassword" class="form-control" name="j_password" value="12345" required/>
+    <input type="password" id="inputPassword" class="form-control" name="j_password" required/>
 
     <div class="checkbox">
         <label>
@@ -52,19 +53,10 @@
     </div>
     <input type="submit" value="Войти" class="btn btn-lg btn-primary btn-block" >
 
-    <a href="/register.html"><h4>Зарегистрироваться</h4></a>
+    <a href="/registration.html"><h4>Зарегистрироваться</h4></a>
     <br/>
     <a href="javascript:history.back()">Назад</a>
 
-    <%--<br /><br />--%>
-    <%--<p>Доступные роли:</p>--%>
-
-    <%--<b>ROLE_SUPER_USER</b><br />--%>
-    <%--Login:<span style="color: royalblue">superuser@outlook.com</span> Password: <span style="color: royalblue">12345</span> <br />--%>
-    <%--<b>ROLE_ADMIN</b> <br />--%>
-    <%--Login:<span style="color: royalblue">admin@gmail.com</span> Password: <span style="color: royalblue">12345</span> <br />--%>
-    <%--<b>ROLE_USER</b> <br />--%>
-    <%--Login: <span style="color: royalblue">roleuser@outlook.com</span> Password: <span style="color: royalblue">12345</span>--%>
 </form>
 </body>
 

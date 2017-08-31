@@ -5,31 +5,30 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import ru.mishost.InformationPortalAboutCars.mvc.bean.Cars;
 
 /**
- * Created for mishlen on 28.05.2017.
+ * Created for m.zakharov on 28.06.2017.
  */
 @Repository
-@Transactional //need to update\delete queries. Don't forget <tx:annotation-driven/>
+@Transactional
 public class ORMService {
 
     @PersistenceContext
     private EntityManager entityManager;
 
-    public List<Cars> queryFindAllUsersJPA() {
-        //System.out.println("ORMService queryfindAllUsersJPA is called");
-        String query = "from cars order by iduser";
-        TypedQuery<Cars> typedQuery = entityManager.createQuery(query, Cars.class);
-        return typedQuery.getResultList();
-    }
+//    public List<Cars> queryFindAllUsersJPA() {
+//        //System.out.println("ORMService queryfindAllUsersJPA is called");
+//        String query = "from cars order by iduser";
+//        TypedQuery<Cars> typedQuery = entityManager.createQuery(query, Cars.class);
+//        return typedQuery.getResultList();
+//    }
 
     public Cars queryFindUserById (int id) {
-        System.out.println("ORMService queryFindUserById is called");
+//        System.out.println("ORMService queryFindUserById is called");
         return entityManager.find(Cars.class, id);
     }
 
@@ -45,47 +44,21 @@ public class ORMService {
         return user;
     }
 
-    public boolean updateUser(int id, boolean enabled) {
-        //System.out.println("ORMService updateUser is called");
-
-        String query= "update user set enabled = ? where iduser = ?";
-        Query nativeQuery = entityManager.createNativeQuery(query);
-        nativeQuery.setParameter(1, enabled);
-        nativeQuery.setParameter(2, id);
-        int result = nativeQuery.executeUpdate();
-        return result > 0; // result show how many rows was updated.
-    }
-
-    public boolean insertUser(String username, String password, boolean enabled) {
+    public boolean insertUser(String username, String password) {
         //System.out.println("ORMExample insertUser is called");
 
-        String qlString = "insert into user (username,password,enabled) values (?,?,?)";
-        Query query = entityManager.createNativeQuery(qlString);
-        query.setParameter(1, username);
-        query.setParameter(2, password);
-        query.setParameter(3, enabled);
-        int result = query.executeUpdate();
+        String qlString = "insert into siteuser (username,password,enabled) values (?,?,?)";
+        Query queryUser = entityManager.createNativeQuery(qlString);
+        queryUser.setParameter(1, username);
+        queryUser.setParameter(2, password);
+        queryUser.setParameter(3, true);
+        int result = queryUser.executeUpdate();
 
-        return result > 0;
-    }
-
-
-    public boolean insertOnceUser(int iduser, boolean taxi, String carnumber, String username, String vin, String phone, String manufacture, boolean customs, String model) {
-
-        String qlString = "INSERT INTO cars (iduser, taxi, carnumber, username, vin, phone, manufacture, customs, model) VALUES (:i,:t,:n,:u,:v,:p,:mu,:c,:mo)";
-        Query query = entityManager.createNativeQuery(qlString);
-
-        query.setParameter("i", iduser);
-        query.setParameter("t", taxi);
-        query.setParameter("n", carnumber);
-        query.setParameter("u", username);
-        query.setParameter("v", vin);
-        query.setParameter("p", phone);
-        query.setParameter("mu", manufacture);
-        query.setParameter("c", customs);
-        query.setParameter("mo", model);
-
-        int result = query.executeUpdate();
+        String qlStringAuth = "insert into authorities (username,authority) values (?,?)";
+        Query queryAuth = entityManager.createNativeQuery(qlStringAuth);
+        queryAuth.setParameter(1, username);
+        queryAuth.setParameter(2, "ROLE_ADMIN");
+        int resultAuth = queryAuth.executeUpdate();
 
         return result > 0;
     }

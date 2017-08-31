@@ -106,7 +106,6 @@
       </div>
       <!-- /.row -->
 
-      <c:url value="/file.html" var="file"/>
       <c:url value="/orm.html" var="orm" />
       <c:url value="/security.html" var="security" />
 
@@ -185,9 +184,6 @@
             <p></p>
             <p>Найти владельца автомобиля по госномеру. Найти телефон владельца автомобиля.</p>
           </div>
-          <%--<div class="col-md-4">--%>
-            <%--<a class="btn btn-lg btn-default btn-block" href="/login.html">Поиск...</a>--%>
-          <%--</div>--%>
           <div class="col-md-4">
               <a class="btn btn-lg btn-default btn-block" href="/orm.html">Поиск...</a>
           </div>

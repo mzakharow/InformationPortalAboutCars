@@ -55,18 +55,11 @@
         <property name="maxUploadSize" value="1000000"/>
     </bean>
 
-    <!--Excel and PDF xml view configuration -->
-    <!--disabling for jUnit test. -->
-    <!--<bean class="org.springframework.web.servlet.view.XmlViewResolver">-->
-        <!--<property name="order" value="0" />-->
-        <!--<property name="location" value="/WEB-INF/config/excel-pdf-config.xml"/>-->
-    <!--</bean>-->
-
     <mvc:view-controller path="/" view-name="/index"/>
     <mvc:view-controller path="/index.html" view-name="/index"/>
     <mvc:view-controller path="/login.html" view-name="/form/login"/>
     <mvc:view-controller path="/about.html" view-name="/about/about"/>
-    <mvc:view-controller path="/register.html" view-name="/form/register"/>
+    <mvc:view-controller path="/registration.html" view-name="/form/registration"/>
     <mvc:view-controller path="/orm.html" view-name="/orm/orm"/>
     <mvc:view-controller path="/security.html" view-name="/security/security"/>
     <mvc:view-controller path="/security/admin.html" view-name="/security/admin"/>

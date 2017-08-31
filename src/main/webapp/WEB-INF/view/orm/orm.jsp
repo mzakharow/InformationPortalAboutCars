@@ -10,8 +10,6 @@
     <jsp:body>
 
         <c:url value="/check-user" var="check-user" />
-        <c:url value="/ormFindAllUsers" var="ormFindAllUsers" />
-        <c:url value='/queryFindByIdUser/1' var="queryFindByIdUser" />
 
         <!-- Page Content -->
         <div class="container">
@@ -40,33 +38,41 @@
                             <%--<p>${resultObject}</p>--%>
                             <table>
                                 <tr>
-                                    <td><b>Модель: </b></td>
-                                    <td><c:out value="${resultObject.model}"/></td>
+                                    <td><font size="3"><b>Модель: </b></font></td>
+                                    <td><font size="3"><c:out value="${resultObject.model}"/></font></td>
+                                    <p></p>
                                 </tr>
                                 <tr>
-                                    <td><b>Номер: </b></td>
-                                    <td><c:out value="${resultObject.carnumber}"/></td>
+                                    <td><font size="3"><b>Номер: </b></font></td>
+                                    <td><font size="3"><c:out value="${resultObject.carnumber}"/></font></td>
+                                    <p></p>
                                 </tr>
                                 <tr>
-                                    <td><b>VIN: </b></td>
-                                    <td><c:out value="${resultObject.vin}"/></td>
+                                    <td><font size="3"><b>VIN: </b></font></td>
+                                    <td><font size="3"><c:out value="${resultObject.vin}"/></font></td>
+                                    <p></p>
                                 </tr>
                                 <tr>
-                                    <td><b>Владелец: </b></td>
-                                    <td><c:out value="${resultObject.username}"/></td>
+                                    <td><font size="3"><b>Владелец: </b></font></td>
+                                    <td><font size="3"><c:out value="${resultObject.username}"/></font></td>
+                                    <p></p>
                                 </tr>
                                 <tr>
-                                   <td><b>Телефон: </b></td>
-                                    <td><c:out value="${resultObject.phone}"/></td>
+                                   <td><font size="3"><b>Телефон: </b></font></td>
+                                    <td><font size="3"><c:out value="${resultObject.phone}"/></font></td>
+                                    <p></p>
                                 </tr>
                                 <tr>
-                                    <td><b>Дата производства: </b></td>
-                                    <td><c:out value="${resultObject.manufacture}"/></td>
+                                    <td><font size="3"><b>Дата производства: </b></font></td>
+                                    <td><font size="3"><c:out value="${resultObject.manufacture}"/></font></td>
+                                    <p></p>
                                 </tr>
                                 <c:if test="${resultObject.taxi == false}">
+                                    <p></p>
                                     <tr><td><b style="color:green">Не использовался в такси</b></td></tr>
                                 </c:if>
                                 <c:if test="${resultObject.taxi == true}">
+                                    <p></p>
                                     <tr><td><b style="color:red">Использовался в такси</b></td></tr>
                                 </c:if>
                                 <tr><td> <br /></td></tr>
@@ -83,9 +89,7 @@
                     <tr>
                         <td><p>Регистрационный номер автомобиля:  <spring:input path="carnumber"/></p></td>
 
-                        <%--<td><p> idUser: <spring:input path="idUser"/></p>--%>
-                        <%--</td>--%>
-                    </tr> <!--ряд с ячейками тела таблицы-->
+                    </tr>
                 </table>
 
                 <spring:button>Поиск</spring:button>

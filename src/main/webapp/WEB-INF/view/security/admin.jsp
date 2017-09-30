@@ -35,8 +35,6 @@
                         <b>Вы вошли как:</b> <security:authentication property="principal.username"/> с ролью: <b><security:authentication property="principal.authorities"/> </b>
                         <br />
 
-
-                        <br />
                         <br />
                         <p>Ссылка logout имеет атрибут /j_spring_security_logout, который прописан в security-config.xml</p>
                         <span style="color: #568C00;"><security:authentication property="principal.username"/></span>
@@ -44,7 +42,6 @@
                     </security:authorize>
 
                 </div>
-
             </div>
             <!-- /.row -->
 

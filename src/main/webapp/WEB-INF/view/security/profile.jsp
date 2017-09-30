@@ -26,7 +26,6 @@
             </div>
             <!-- /.row -->
 
-            <c:url value="/uploadFile" var="fileUploadControllerURL" />
             <!-- Content Row -->
             <div class="row">
 

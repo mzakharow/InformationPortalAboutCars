@@ -95,7 +95,7 @@
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4><i class="fa fa-fw fa-compass"></i>О проеке</h4>
+              <h4><i class="fa fa-fw fa-compass"></i>О проекте</h4>
             </div>
             <div class="panel-body">
               <p>Основная цель проекта - изучение языка программирования Java и технологий, позволяющих расширить его возможности и упростить реализацию крупных проектов. Данный проект сделан исключительно в учебных целях.</p>

@@ -9,12 +9,9 @@
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
-    <!-- DB schema will be updated if needed -->
-    <!-- <property name="hbm2ddl.auto">update</property> -->
-
     <property name="org.postgresql.Driver" />
     <property name="jdbc:postgresql://localhost:5432/mishost_db" />
-    <property name="postgres" />
-    <property name="098098789" />
+    <property name="name" />
+    <property name="*****" />
   </session-factory>
 </hibernate-configuration>

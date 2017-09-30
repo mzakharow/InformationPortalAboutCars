@@ -39,12 +39,12 @@
     </c:if>
 
     <h2 class="form-signin-heading">Пожалуйста войдите</h2>
-
+    <p>Адрес электронной почты</p>
     <label for="inputEmail" class="sr-only"><spring:message code="code" text="Email"/></label>
-    <input id="inputEmail" class="form-control" name="j_username" required autofocus/>
-
+    <input id="inputEmail" class="form-control" name="j_username" value="Email" required autofocus/>
+    <p>Пароль</p>
     <label for="inputPassword" class="sr-only"><spring:message code="pass" text="Password"/></label>
-    <input type="password" id="inputPassword" class="form-control" name="j_password" required/>
+    <input type="password" id="inputPassword" class="form-control" name="j_password" value="Password" required/>
 
     <div class="checkbox">
         <label>
@@ -53,7 +53,7 @@
     </div>
     <input type="submit" value="Войти" class="btn btn-lg btn-primary btn-block" >
 
-    <a href="/registration.html"><h4>Зарегистрироваться</h4></a>
+    <a href="/registration.html"><h4>Регистрация</h4></a>
     <br/>
     <a href="javascript:history.back()">Назад</a>
 

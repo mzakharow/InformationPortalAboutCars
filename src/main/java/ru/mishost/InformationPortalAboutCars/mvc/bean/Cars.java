@@ -6,7 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 /**
- * Created for mzakharov on 25.05.2017.
+ * Created for mzakharov on 25.06.2017.
  */
 @Entity
 @Table(name="\"cars\"")

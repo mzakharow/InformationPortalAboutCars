@@ -71,9 +71,6 @@
                         <li style="padding-top: 15px; padding-bottom: 15px; color: green">
                             Вы вошли как:
                             <security:authentication property="principal.username"/>
-                            <%--с ролью:--%>
-                            <%--<b><security:authentication property="principal.authorities"/></b>--%>
-
                         </li>
                         <li> <a style="color: red;" href="<c:url value="/j_spring_security_logout"/>">Выйти</a> </li>
                     </c:if>

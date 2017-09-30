@@ -2,7 +2,5 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/main/java/ru/mishost/InformationPortalAboutCars/mvc/orm/ORMService.java" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/dbschema.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/test-data.sql" dialect="PostgreSQL" />
   </component>
 </project>

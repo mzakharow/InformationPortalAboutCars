@@ -20,13 +20,6 @@ public class ORMService {
     @PersistenceContext
     private EntityManager entityManager;
 
-//    public List<Cars> queryFindAllUsersJPA() {
-//        //System.out.println("ORMService queryfindAllUsersJPA is called");
-//        String query = "from cars order by iduser";
-//        TypedQuery<Cars> typedQuery = entityManager.createQuery(query, Cars.class);
-//        return typedQuery.getResultList();
-//    }
-
     public Cars queryFindUserById (int id) {
 //        System.out.println("ORMService queryFindUserById is called");
         return entityManager.find(Cars.class, id);
@@ -59,17 +52,6 @@ public class ORMService {
         queryAuth.setParameter(1, username);
         queryAuth.setParameter(2, "ROLE_ADMIN");
         int resultAuth = queryAuth.executeUpdate();
-
-        return result > 0;
-    }
-
-    public boolean deleteUser(int idUser) {
-        //System.out.println("ORMExample deleteUser is called");
-
-        String qlString = "delete from user where iduser=?";
-        Query query = entityManager.createNativeQuery(qlString);
-        query.setParameter(1, idUser);
-        int result = query.executeUpdate();
         return result > 0;
     }
 

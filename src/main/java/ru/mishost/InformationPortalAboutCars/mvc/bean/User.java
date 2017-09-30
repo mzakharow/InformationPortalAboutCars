@@ -6,16 +6,11 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 /**
- * Created for mishost.ru on 25.02.2016.
+ * Created for mishost.ru on 26.06.2017.
  */
 @Entity
 @Table(name ="\"siteuser\"")
 public class User {
-
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "iduser")
-//    private int iduser;
 
     @Id
     @NotEmpty
@@ -30,14 +25,6 @@ public class User {
 
     @Column(name="enabled")
     private boolean enabled;
-
-//    public int getIdUser() {
-//        return iduser;
-//    }
-//
-//    public void setIdUser(int iduser) {
-//        this.iduser = iduser;
-//    }
 
     public String getUsername() {
         return username;
@@ -66,7 +53,6 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-//                "idUser=" + iduser +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +

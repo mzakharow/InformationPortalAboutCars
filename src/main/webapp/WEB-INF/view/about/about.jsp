@@ -9,10 +9,9 @@
     <jsp:attribute name="title">О проекте</jsp:attribute>
 
     <jsp:body>
-        <!-- Page Content -->
+
         <div class="container">
 
-            <!-- Page Heading/Breadcrumbs -->
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">О проекте
@@ -25,9 +24,7 @@
                     </ol>
                 </div>
             </div>
-            <!-- /.row -->
 
-            <!-- Intro Content -->
             <div class="row">
                 <div class="col-md-6">
                     <img class="img-responsive" src="${pageContext.request.contextPath}/resources/images/about/Java.png" alt="">
@@ -41,9 +38,7 @@
                     <p>Данные базы данных вымышленные. Любые совпадения с реальными автомобилями и людьми - случайны.</p>
                 </div>
             </div>
-            <!-- /.row -->
 
-            <!-- Team Members -->
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="page-header">Используемые технологии</h2>
@@ -116,12 +111,9 @@
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
 
-            <!-- Our Customers -->
             <div class="row">
                 <div class="col-lg-12">
-                    <%--<h2 class="page-header">Используемые технологии</h2>--%>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                     <img class="img-responsive customer-img" src="/resources/images/about/java.jpg" width="500" height="300" alt="">
@@ -142,12 +134,11 @@
                     <img class="img-responsive customer-img" src="/resources/images/about/Java-Maven.png" width="500" height="300" alt="">
                 </div>
             </div>
-            <!-- /.row -->
 
             <hr>
 
         </div>
-        <!-- /.container -->
+
     </jsp:body>
 
 </page:template>

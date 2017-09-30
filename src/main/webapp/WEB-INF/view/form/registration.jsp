@@ -26,8 +26,10 @@
     <springform:form modelAttribute="resultObject" action="ormInsertUser">
 
         <p><h3>Регистрация</h3></p>
-        <p><springform:input path="username" class="form-control"/></p>
-        <p><springform:password path="password" class="form-control"/></p>
+        <p>Адрес электронной почты</p>
+        <p><springform:input path="username" class="form-control" autocomplete="true"/></p>
+        <p>Пароль</p>
+        <p><springform:password path="password" class="form-control" autocomplete="true"/></p>
         <springform:button class="btn btn-lg btn-primary btn-block"><strong>Регистрация</strong></springform:button>
         <a href="javascript:history.back()">Назад</a>
     </springform:form>
